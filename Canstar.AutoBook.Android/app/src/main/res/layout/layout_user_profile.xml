@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundGray"
+    tools:context=".activity.UserProfile">
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_nohamburger"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_profile"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center"
+            android:src="@mipmap/thumb_userprofile"
+            app:civ_border_color="#660A4548"
+            app:civ_border_width="5dp" />
+
+        <ImageView
+            android:id="@+id/btn_editprofile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_edit_bgc"
+            android:layout_margin="10dp"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_alignRight="@+id/profile_image"/>
+
+        <com.pirateking.canstar.Design.TextAwesome
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="@string/fa_refresh"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/lbl_score"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="25dp"
+            android:textColor="#fff"
+            android:text="Score"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_Score"
+            android:layout_below="@+id/profile_image"
+            android:layout_toRightOf="@+id/lbl_score"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="#fff"
+            android:text="Score"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    
+    <TextView
+        android:id="@+id/lbl_name"
+        android:layout_below="@+id/layout_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name :"
+
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/layout_profile"
+        android:layout_toRightOf="@+id/lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="john doe"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/lbl_email"
+        android:layout_below="@+id/lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Email :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="a@gmail.com"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/lbl_mobile"
+        android:layout_below="@+id/lbl_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Mobile :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_below="@+id/tv_email"
+        android:layout_toRightOf="@+id/lbl_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="a@gmail.com"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/lbl_birthday"
+        android:layout_below="@+id/lbl_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Birthday :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_below="@+id/tv_mobile"
+        android:layout_toRightOf="@+id/lbl_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="a@gmail.com"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/lbl_Address"
+        android:layout_below="@+id/lbl_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Address :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_below="@+id/tv_birthday"
+        android:layout_toRightOf="@+id/lbl_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="a@gmail.com"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/lbl_usertype"
+        android:layout_below="@+id/lbl_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="User Type :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/tv_usertype"
+        android:layout_below="@+id/tv_address"
+        android:layout_toRightOf="@+id/lbl_usertype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="a@gmail.com"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+
+</RelativeLayout>
